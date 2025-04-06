@@ -33,7 +33,7 @@ namespace UserAuthentication.Services
             try
             {
                 // Busca si el usuario ya existe (ignorando mayúsculas/minúsculas) y tiene estatus activo.
-                var validationResult = await _context.Users.AnyAsync(u => u.UserName.Equals(UserName, StringComparison.CurrentCultureIgnoreCase) && u.EstatusId == 1);
+                var validationResult = await _context.Users.AnyAsync(u => u.UserName.Equals(UserName) && u.EstatusId == 1);
                 return validationResult;
             }
             catch (Exception ex)
