@@ -101,7 +101,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "token",
+        "Name": "Token",
         "Type": "System.String",
         "IsRequired": false
       }

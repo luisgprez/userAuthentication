@@ -96,7 +96,7 @@
         ],
         "parameters": [
           {
-            "name": "token",
+            "name": "Token",
             "in": "query",
             "schema": {
               "type": "string"
